@@ -1,0 +1,91 @@
+.btn {
+    position: relative;
+    z-index: 0;
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 1px solid transparent;
+        width: 0;
+        height: 0;
+        z-index: -1;
+    }
+    &::before {
+        //     border-left: 1px solid #f28d55;
+        //     border-right: 1px solid #f28d55;
+        transform: scale(1.01);
+        width: 100%;
+        height: 100%;
+        animation-name: border-height;
+        animation-duration: 0.6s;
+        animation-timing-function: ease;
+        background: #f28d55;
+    }
+    &::after {
+        border: 1px solid #f28d55;
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        animation-name: border-widths;
+        animation-duration: 0.6s;
+        animation-timing-function: ease;
+        box-shadow: 2px 4px 6px rgba(255, 227, 211, 0.54);
+    }
+    &:hover {
+        &::after {
+            animation-name: border-height;
+            animation-duration: 0.6s;
+            animation-timing-function: ease;
+            transform: scale(1);
+            background: linear-gradient(180deg, rgba(100, 17, 166, 0.2) 0.01%, rgba(63, 4, 109, 0.2) 100%);
+            border: 1px solid #f28d55;
+            border-radius: 0%;
+            box-shadow: none;
+        }
+        &::before {
+            animation-name: border-widths;
+            animation-duration: 0.6s;
+            animation-timing-function: ease;
+            transform: scale(0);
+            border-radius: 100%;
+        }
+    }
+}
+@keyframes border-widths {
+    0% {
+        transform: scaleX(0.5);
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: scaleX(0);
+        border-radius: 90%;
+    }
+}
+@keyframes border-height {
+    0% {
+        transform: scale(0.1);
+        border-radius: 90%;
+    }
+    10% {
+        transform: scale(0.5);
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: scale(1);
+        border-radius: 0%;
+    }
+}
+button {
+    background-color: transparent;
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 0px;
+    border-style: outset;
+    border-color: transparent;
+    border-image: initial;
+}

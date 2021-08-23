@@ -21,29 +21,6 @@ input#menu__toggle[type="checkbox"] + label {
     position: relative;
     top: 0;
     right: 0;
-    .menu__box-bottom {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .addres,
-    .contacts,
-    .social {
-        margin-bottom: 3rem;
-        @media (min-width: 1200px) {
-            display: none;
-        }
-    }
-    .addres {
-        margin-left: -1rem;
-        width: 18.4rem;
-    }
-    .btn-red {
-        @media (min-width: 1200px) {
-            display: none;
-        }
-    }
 }
 /* стилизуем кнопку */
 .menu__btn {
@@ -87,63 +64,8 @@ input#menu__toggle[type="checkbox"] + label {
 }
 /* контейнер меню */
 .menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    overflow-x: auto;
-    height: 0%;
-    width: 0%;
-    max-width: 41.1rem;
-
-    top: 0;
-    right: -100%;
-    // transition-duration: 1s;
-    background: #ebf7f5;
-    @media (min-width: 640px) {
-        width: 100%;
-        max-width: 100%;
-        background: linear-gradient(to left, #ebf7f5 52%, rgba(0, 0, 0, 0.1) 48%);
-        border-radius: 0 0 0 90%;
-    }
-    @media (min-width: 900px) {
-        width: 100%;
-        max-width: 100%;
-        background: none;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 50%, #ebf7f5 50%);
-    }
-    padding: 8rem 2rem;
-    transition: all 0.4s;
-    z-index: 90;
-    .social ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
-    .contacts {
-        &::after {
-            transform: translate(0.5rem, 1.5rem);
-        }
-        a {
-            margin-bottom: 2rem;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-    .social {
-        li {
-            margin-right: 4rem;
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
-    button {
-        margin-bottom: 3rem;
-    }
+    display: flex;
     @media (min-width: 1200px) {
-        display: block;
         width: 100%;
         background: transparent;
         position: inherit;
@@ -151,21 +73,32 @@ input#menu__toggle[type="checkbox"] + label {
         overflow: initial;
         height: 100%;
         width: 100%;
-        max-width: 100rem;
         top: 0;
         right: 0;
         padding: 0;
     }
+    .btn {
+        width: 20.8rem;
+        height: 4.3rem;
+        // background: #f28d55;
+        background: transparent;
+        // box-shadow: 1px 2px 6px rgba(255, 227, 211, 0.54);
+        transform: skew(-20deg);
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #ffffff;
+        &:hover,
+        &:focus {
+            // background: linear-gradient(180deg, rgba(100, 17, 166, 0.2) 0.01%, rgba(63, 4, 109, 0.2) 100%);
+            // border: 1px solid #f28d55;
+            box-sizing: border-box;
+        }
+    }
 }
 
 .menu__box-bottom {
-    @media (min-width: 640px) {
-        margin-left: auto;
-        width: 48%;
-    }
-    @media (min-width: 1200px) {
-        display: none;
-    }
+    display: flex;
+    align-items: center;
 }
 #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
@@ -187,11 +120,4 @@ input#menu__toggle[type="checkbox"] + label {
     transition: all 0.4s;
     z-index: 90;
     filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.4));
-    @media (min-width: 640px) {
-        background: linear-gradient(to left, #ebf7f5 52%, rgba(0, 0, 0, 0.6) 48%);
-        border-radius: 0;
-    }
-    @media (min-width: 900px) {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 50%, #ebf7f5 50%);
-    }
 }

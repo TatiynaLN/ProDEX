@@ -7,4 +7,8 @@
 .header {
     background: linear-gradient(180deg, rgba(119, 27, 142, 0.3) 0%, rgba(119, 27, 142, 0) 106.32%);
     backdrop-filter: blur(2px);
+    .container {
+        flex-direction: initial;
+        justify-content: flex-end;
+    }
 }
