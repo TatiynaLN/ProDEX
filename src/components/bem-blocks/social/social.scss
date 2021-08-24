@@ -1,6 +1,8 @@
 .social {
     display: flex;
     padding: 0 10rem;
+    width: 8.8rem;
+    justify-content: space-between;
     li,
     a {
         display: block;
@@ -8,10 +10,6 @@
         height: 2rem;
     }
     li {
-        margin-right: 4rem;
-        &:last-child {
-            margin-right: 0;
-        }
         &:hover,
         &:focus {
             svg {

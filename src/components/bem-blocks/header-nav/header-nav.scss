@@ -5,11 +5,10 @@
         margin-bottom: 4rem;
         @media (min-width: 640px) {
             margin-left: auto;
-            width: 45%;
         }
-        @media (min-width: 1200px) {
+        @media (min-width: 1140px) {
             margin-left: 0;
-            width: 100%;
+            width: auto;
             margin-bottom: 0;
             justify-self: flex-start;
         }
@@ -41,13 +40,13 @@
         .header__nav-list {
             width: 100%;
             text-align: left;
-            @media (min-width: 1200px) {
+            @media (min-width: 1140px) {
                 display: flex;
             }
             li {
                 position: relative;
                 height: 100%;
-                @media (min-width: 1200px) {
+                @media (min-width: 1140px) {
                     margin-right: 2.4rem;
                     &:hover,
                     &:focus {
@@ -56,11 +55,7 @@
                             opacity: 1;
                             visibility: visible;
                             box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
-                            // animation-name: swingdown;
-                            // animation-duration: 1s;
-                            // animation-timing-function: ease;
                             z-index: 8;
-                            // transform: scaleY(1.1);
                             transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1);
                             transition: all 0.5s;
                             border-radius: 0rem 5rem 0rem 2rem;
@@ -99,6 +94,7 @@
                 }
             }
             a {
+                text-align: right;
                 line-height: 2.3rem;
                 display: block;
                 padding: 2.5rem 2rem;
@@ -118,40 +114,12 @@
         rgba(17, 192, 171, 0.7) 0.5px 0px, rgba(17, 192, 171, 0.7) 0.5px 0.5px, rgba(17, 192, 171, 0.7) 0.5px 0px,
         rgba(1, 18, 15, 0.7) 0.5px 0.5px;
 }
-.submenu-active {
-    visibility: visible !important;
-    opacity: 1 !important;
-    // animation-name: swingdown;
-    // animation-duration: 1s;
-    // animation-timing-function: ease;
-
-    background: #ebf7f5 !important;
-    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+.header__nav .header__nav-list li .header__drop-menu.submenu-active {
+    visibility: visible;
+    opacity: 1;
     z-index: 99;
+    background: rgba(32, 0, 57, 0.9);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1);
+    transition: all 0.5s;
+    border-radius: 0rem 5rem 0rem 2rem;
 }
-
-// @keyframes swingdown {
-//     0% {
-//         opacity: 1;
-//         transform: rotateX(90deg);
-//         z-index: 99;
-//     }
-
-//     30% {
-//         transform: rotateX(-30deg) rotateY(7deg);
-//         animation-timing-function: ease-in-out;
-//         z-index: 99;
-//     }
-
-//     65% {
-//         transform: rotateX(20deg) rotateY(-3deg);
-//         animation-timing-function: ease-in-out;
-//         z-index: 99;
-//     }
-
-//     100% {
-//         transform: rotateX(0);
-//         animation-timing-function: ease-in-out;
-//         z-index: 99;
-//     }
-// }

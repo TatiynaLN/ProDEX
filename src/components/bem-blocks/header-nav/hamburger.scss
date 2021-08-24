@@ -1,10 +1,3 @@
-// /* скрываем чекбокс */
-#menu__toggle {
-    opacity: 0;
-    @media (min-width: 1200px) {
-        display: none;
-    }
-}
 input#menu__toggle[type="checkbox"] + label {
     &::before {
         background: transparent;
@@ -17,17 +10,18 @@ input#menu__toggle[type="checkbox"] + label {
         transform: rotate(0deg);
     }
 }
-.hamburger-menu {
-    position: relative;
-    top: 0;
-    right: 0;
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+    @media (min-width: 1140px) {
+        display: none;
+    }
 }
 /* стилизуем кнопку */
 .menu__btn {
     display: flex; /* используем flex для центрирования содержимого */
     align-items: center; /* центрируем содержимое кнопки */
-    position: relative;
-    // top: 0.5rem;
+    position: fixed;
     top: 0;
     margin-left: auto;
     right: 2rem;
@@ -36,9 +30,11 @@ input#menu__toggle[type="checkbox"] + label {
     height: 2.6rem;
     cursor: pointer;
     z-index: 91;
-    transform: translatey(1.3rem);
-
-    @media (min-width: 1200px) {
+    transform: translatey(2.4rem);
+    @media (min-width: 540px) {
+        transform: translatey(3rem);
+    }
+    @media (min-width: 1140px) {
         display: none;
     }
 }
@@ -50,7 +46,7 @@ input#menu__toggle[type="checkbox"] + label {
     position: absolute;
     width: 100%;
     height: 0.2rem;
-    background-color: #11c0ab;
+    background-color: #ffffff;
     transition-duration: 0.25s;
     border-radius: 20px;
 }
@@ -64,42 +60,70 @@ input#menu__toggle[type="checkbox"] + label {
 }
 /* контейнер меню */
 .menu__box {
-    display: flex;
-    @media (min-width: 1200px) {
-        width: 100%;
+    display: block;
+    visibility: hidden;
+    position: fixed;
+    opacity: 0;
+    top: -100%;
+    right: 0;
+    width: 28.8rem;
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    padding: 5rem 0 3rem 0;
+    transition: all 0.4s;
+    z-index: 90;
+    background: linear-gradient(180deg, rgba(100, 17, 166, 0.8) 0.01%, rgba(63, 4, 109, 0.8) 100%);
+    backdrop-filter: blur(20px);
+    @media (min-width: 1140px) {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        justify-content: space-between;
+        opacity: 1;
+        visibility: visible;
+        backdrop-filter: blur(0px);
         background: transparent;
         position: inherit;
         visibility: visible;
         overflow: initial;
-        height: 100%;
-        width: 100%;
+        min-height: auto;
         top: 0;
         right: 0;
         padding: 0;
     }
+    @media (min-width: 1440px) {
+        width: auto;
+    }
     .btn {
-        width: 20.8rem;
-        height: 4.3rem;
-        // background: #f28d55;
-        background: transparent;
-        // box-shadow: 1px 2px 6px rgba(255, 227, 211, 0.54);
-        transform: skew(-20deg);
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        color: #ffffff;
-        &:hover,
-        &:focus {
-            // background: linear-gradient(180deg, rgba(100, 17, 166, 0.2) 0.01%, rgba(63, 4, 109, 0.2) 100%);
-            // border: 1px solid #f28d55;
-            box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        @media (min-width: 1140px) {
+            display: block;
+            width: 20.8rem;
+            min-width: 20.8rem;
+        }
+    }
+
+    .social {
+        margin-bottom: 4.5rem;
+        margin-right: 2rem;
+        margin-left: auto;
+        @media (min-width: 540px) {
+            margin-right: 2rem;
+        }
+        @media (min-width: 1140px) {
+            width: 8.8rem;
+            min-width: 8.8rem;
+            display: flex;
+            margin-bottom: 0rem;
+        }
+        @media (min-width: 1440px) {
+            margin: 0 10rem;
         }
     }
 }
 
-.menu__box-bottom {
-    display: flex;
-    align-items: center;
-}
 #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
 }
@@ -113,11 +137,14 @@ input#menu__toggle[type="checkbox"] + label {
 }
 #menu__toggle:checked ~ .menu__box {
     visibility: visible;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    // transition-duration: 0.7s;
+    opacity: 1;
     transition: all 0.4s;
-    z-index: 90;
-    filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.4));
+    top: 0;
+}
+.hamburger-menu {
+    @media (min-width: 1140px) {
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
