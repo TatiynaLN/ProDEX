@@ -1,3 +1,67 @@
+.btn-border {
+    height: 9rem;
+    max-width: 29.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    transition: all 0.3s;
+    color: #ffffff;
+    span {
+        display: block;
+        position: relative;
+        padding: 3rem 3.31rem;
+        border-radius: 80%;
+        font-size: 2rem;
+        line-height: 3rem;
+        z-index: 0;
+        transition: all 0.7s;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 9rem;
+            height: 9rem;
+            left: 0;
+            top: 0;
+            transition: all 0.4s;
+            background-image: url(../img/icons/border-btn.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            transform: translate(-2%, 0);
+        }
+    }
+    &:hover {
+        span {
+            transition: all 0.7s;
+            margin-right: 2rem;
+            background: #ed8b54;
+            border-radius: 50%;
+            &::before {
+                transition: all 0.4s;
+                opacity: 0;
+            }
+        }
+    }
+    &:focus {
+        transition: all 0.3s;
+        color: #f28d55;
+        span {
+            transition: all 0.7s;
+            margin-right: 2rem;
+            background: #ed8b54;
+            border-radius: 50%;
+            color: #ffffff;
+            &::before {
+                transition: all 0.4s;
+                opacity: 0;
+            }
+        }
+    }
+}
 .btn {
     position: relative;
     z-index: 0;
@@ -13,8 +77,6 @@
         z-index: -1;
     }
     &::before {
-        //     border-left: 1px solid #f28d55;
-        //     border-right: 1px solid #f28d55;
         transform: scale(1.01);
         width: 100%;
         height: 100%;

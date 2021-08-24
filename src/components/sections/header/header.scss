@@ -1,7 +1,8 @@
 .wrap {
     background-image: url("../img/icons/fon.svg");
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-position: center center;
     width: 100%;
 }
 .header {
@@ -73,6 +74,7 @@
     }
 }
 .header__bottom-new {
+    z-index: 80;
     @media (min-width: 1140px) {
         position: fixed;
         padding: 0;
