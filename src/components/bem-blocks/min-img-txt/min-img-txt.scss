@@ -4,6 +4,14 @@
     backdrop-filter: blur(6px);
     padding: 4.5rem 4rem;
     margin-bottom: 5rem;
+    &:hover,
+    &:focus {
+        .svg {
+            transform: translateX(4rem) matrix3d(-0.8, 0, 0, 0, 0.4, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+            transition: all 0.4s;
+        }
+    }
+
     &:last-child {
         margin-bottom: 0;
         @media (min-width: 1140px) {
@@ -63,24 +71,25 @@
         align-self: baseline;
         width: auto;
         max-height: 25rem;
-        max-width: 19.5rem;
+        max-width: 21rem;
         min-height: 25rem;
         object-fit: scale-down;
+        transition: all 0.4s;
         @media (min-width: 1140px) {
             display: block;
             position: relative;
             margin-right: 1.5rem;
             align-self: flex-end;
             z-index: 2;
+            transform: translateX(4rem);
         }
         img,
         svg {
-            min-height: 100%;
             max-height: 100%;
-            max-width: 19.5rem;
+            min-height: 100%;
+            max-width: 21rem;
+            min-width: 100%;
             object-fit: cover;
-
-            fill: ivory;
         }
     }
     .txt {
@@ -94,7 +103,7 @@
             padding: 4.5rem 4rem 4.5rem 12rem;
             min-height: 100%;
             min-width: 80%;
-            transform: translateX(-90px);
+            transform: translateX(-80px);
             z-index: 1;
         }
     }
