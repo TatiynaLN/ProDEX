@@ -1,0 +1,111 @@
+.preimuchestvo {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 6px 30px rgba(255, 227, 211, 0.08);
+    backdrop-filter: blur(6px);
+    padding: 4.5rem 4rem;
+    margin-bottom: 5rem;
+    &:last-child {
+        margin-bottom: 0;
+        @media (min-width: 1140px) {
+            margin-bottom: 5rem;
+        }
+    }
+    @media (min-width: 1140px) {
+        background: transparent;
+        box-shadow: 4px 6px 30px transparent;
+        backdrop-filter: blur(0px);
+        padding: 0;
+        display: flex;
+        width: 100%;
+        width: 48%;
+        margin-right: 1rem;
+        margin-bottom: 5rem;
+        align-self: stretch;
+        position: relative;
+        z-index: 0;
+        &::after {
+            position: absolute;
+            content: "";
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 6px 30px rgba(255, 227, 211, 0.08);
+            backdrop-filter: blur(6px);
+            width: 80%;
+            height: 100%;
+            z-index: 0;
+            right: 0;
+            top: 0;
+        }
+    }
+    @media (min-width: 1540px) {
+        max-width: 67.1rem;
+        min-width: 67.1rem;
+    }
+    &:nth-child(2n) {
+        @media (min-width: 1140px) {
+            margin-right: 0rem;
+        }
+        @media (min-width: 1540px) {
+            margin-left: 4rem;
+        }
+    }
+    &:nth-child(2) {
+        @media (min-width: 1540px) {
+            margin-right: auto;
+        }
+    }
+    &:nth-child(3) {
+        @media (min-width: 1540px) {
+            margin-left: auto;
+        }
+    }
+    .svg {
+        display: none;
+        align-self: baseline;
+        width: auto;
+        max-height: 25rem;
+        max-width: 19.5rem;
+        min-height: 25rem;
+        object-fit: scale-down;
+        @media (min-width: 1140px) {
+            display: block;
+            position: relative;
+            margin-right: 1.5rem;
+            align-self: flex-end;
+            z-index: 2;
+        }
+        img,
+        svg {
+            min-height: 100%;
+            max-height: 100%;
+            max-width: 19.5rem;
+            object-fit: cover;
+
+            fill: ivory;
+        }
+    }
+    .txt {
+        @media (min-width: 1140px) {
+            // width: 100%;
+            // min-width: 45rem;
+            // max-width: 59.4rem;
+            align-self: flex-start;
+            padding-bottom: 4rem;
+
+            padding: 4.5rem 4rem 4.5rem 12rem;
+            min-height: 100%;
+            min-width: 80%;
+            transform: translateX(-90px);
+            z-index: 1;
+        }
+    }
+}
+.preimuchestvo-wrap {
+    @media (min-width: 1140px) {
+        display: flex;
+        width: 120%;
+        height: 100%;
+        transform: translateX(-150px);
+        padding-top: 4.5rem;
+        align-items: flex-end;
+    }
+}

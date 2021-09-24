@@ -21,7 +21,7 @@ input#menu__toggle[type="checkbox"] + label {
 .menu__btn {
     display: flex; /* используем flex для центрирования содержимого */
     align-items: center; /* центрируем содержимое кнопки */
-    position: fixed;
+    position: relative;
     top: 0;
     margin-left: auto;
     right: 2rem;
@@ -30,9 +30,9 @@ input#menu__toggle[type="checkbox"] + label {
     height: 2.6rem;
     cursor: pointer;
     z-index: 91;
-    transform: translatey(2.4rem);
+    transform: translatey(-1.4rem);
     @media (min-width: 540px) {
-        transform: translatey(3rem);
+        transform: translatey(-1.1rem);
     }
     @media (min-width: 1140px) {
         display: none;
@@ -78,10 +78,9 @@ input#menu__toggle[type="checkbox"] + label {
     @media (min-width: 1140px) {
         display: flex;
         align-items: center;
-        width: 90%;
+        width: auto;
         justify-content: space-between;
         opacity: 1;
-        visibility: visible;
         backdrop-filter: blur(0px);
         background: transparent;
         position: inherit;
@@ -102,6 +101,7 @@ input#menu__toggle[type="checkbox"] + label {
             display: block;
             width: 20.8rem;
             min-width: 20.8rem;
+            max-width: 20.8rem;
         }
     }
 

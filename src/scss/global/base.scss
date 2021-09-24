@@ -42,6 +42,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: 1140px) {
+    padding: 0 7rem;
+  }
+  @media (min-width: 1740px) {
+    padding: 0 15rem;
+  }
 }
 
 .no-scroll {

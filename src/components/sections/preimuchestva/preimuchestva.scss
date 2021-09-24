@@ -1,0 +1,17 @@
+.preimuchestva {
+    width: 100%;
+    @media (min-width: 1140px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // gap: 5rem 13.5rem;
+        // padding: 0 14.9rem;
+        padding: 0 1.5rem;
+    }
+    @media (min-width: 1540px) {
+        padding: 0 7rem;
+    }
+    @media (min-width: 1700px) {
+        padding: 0 15rem;
+    }
+}

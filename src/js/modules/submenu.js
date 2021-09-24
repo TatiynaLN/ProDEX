@@ -1,4 +1,4 @@
-function submenu() {
+export default function submenu() {
     if (window.innerWidth < 1140) {
         subMenuHandler();
     }
@@ -36,7 +36,8 @@ function submenu() {
             }
         });
 
-        const menuClose = document.querySelector('.menu__btn');
+        // const menuClose = document.querySelector('.menu__btn');
+        const menuClose = document.querySelector('.cmn-toggle-switch');
 
         menuClose.addEventListener('click', () => {
             // if (subMenu[1].classList.contains('submenu-active')) {
@@ -59,4 +60,3 @@ function submenu() {
         });
     }
 }
-export default submenu;
