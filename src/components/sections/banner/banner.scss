@@ -1,5 +1,11 @@
 .banner {
     width: 100%;
+    position: relative;
+    z-index: -1;
+    @media (min-width: 1140px) {
+        position: initial;
+        z-index: 0;
+    }
     &__blocks {
         width: 100%;
         display: flex;
@@ -12,6 +18,7 @@
 }
 .banner-home {
     padding: 18.3rem 0;
+
     .title {
         max-width: 86rem;
     }

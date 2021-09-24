@@ -1,6 +1,11 @@
 .preimuchestva {
     width: 100%;
+    margin-bottom: 15rem;
+    position: relative;
+    z-index: -1;
     @media (min-width: 1140px) {
+        position: initial;
+        z-index: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

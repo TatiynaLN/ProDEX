@@ -36,8 +36,8 @@ export default function submenu() {
             }
         });
 
-        // const menuClose = document.querySelector('.menu__btn');
-        const menuClose = document.querySelector('.cmn-toggle-switch');
+        const menuClose = document.querySelector('.menu__btn');
+
 
         menuClose.addEventListener('click', () => {
             // if (subMenu[1].classList.contains('submenu-active')) {

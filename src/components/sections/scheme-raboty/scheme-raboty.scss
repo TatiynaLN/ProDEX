@@ -1,0 +1,68 @@
+.scheme-raboty {
+    margin-bottom: 15rem;
+    p {
+        margin-bottom: 7.4rem;
+    }
+}
+.shagi {
+    width: 100%;
+    counter-reset: shag;
+    @media (min-width: 1140px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.shag {
+    width: 100%;
+    max-width: 90%;
+    position: relative;
+    padding-left: 10.6rem;
+    padding-top: 3rem;
+    padding-bottom: 2.9rem;
+    margin-bottom: 3rem;
+    @media (min-width: 1140px) {
+        max-width: 25%;
+        min-width: 25%;
+        padding-left: 10rem;
+    }
+
+    &:nth-child(2n) {
+        margin-left: auto;
+        @media (min-width: 1140px) {
+            margin-left: 0;
+        }
+    }
+    &::before {
+        counter-increment: shag; /* Инкрементирует счётчик*/
+        content: counter(shag);
+        font-family: "NEXT ART";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17rem;
+        width: 10.6rem;
+        background-image: linear-gradient(180deg, rgba(185, 97, 255, 0.3) 35.68%, rgba(91, 0, 163, 0.3) 68.75%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @media (min-width: 1140px) {
+            width: auto;
+            transform: translateX(3rem);
+        }
+    }
+    h3 {
+        background-image: linear-gradient(180deg, rgba(185, 97, 255, 0.3) 35.68%, rgba(91, 0, 163, 0.3) 68.75%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.2s;
+        margin-bottom: 1rem;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
