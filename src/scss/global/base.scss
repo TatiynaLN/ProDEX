@@ -49,7 +49,21 @@ footer {
     padding: 0 15rem;
   }
 }
-
+.containers {
+  width: 100%;
+  max-width: 162rem;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 1140px) {
+    padding: 0 7rem;
+  }
+  @media (min-width: 1740px) {
+    padding: 0 15rem;
+  }
+}
 .no-scroll {
   overflow: hidden;
 }

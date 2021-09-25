@@ -1,0 +1,114 @@
+.services {
+    width: 100%;
+    h2 {
+        margin-left: 1.5rem;
+        @media (min-width: 1140px) {
+            margin-left: 0;
+        }
+    }
+}
+.services-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (min-width: 1140px) {
+        justify-content: space-between;
+    }
+}
+.service {
+    padding: 3.6rem 1rem;
+    width: 100%;
+    max-width: 58.5rem;
+    display: flex;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 6px 30px rgba(255, 227, 211, 0.08);
+    backdrop-filter: blur(6px);
+    margin-bottom: 5rem;
+    &::after,
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        @media (min-width: 1140px) {
+        }
+    }
+    &::after {
+        width: 3.1rem;
+        height: 3.1rem;
+        transform: translate(15.1rem, 5.8rem) rotate(-45deg);
+        border: 2px solid rgba(63, 4, 109, 0.5);
+    }
+    &::before {
+        width: 1.2rem;
+        height: 1.2rem;
+        transform: translate(18.9rem, 6.7rem) rotate(-45deg);
+        border: 1px solid rgba(63, 4, 109, 0.7);
+    }
+    @media (min-width: 1140px) {
+        max-width: 48%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.1rem 3rem 2.1rem 1rem;
+        position: relative;
+    }
+    &__svg {
+        min-width: 5.4rem;
+        min-height: 5.4rem;
+        max-width: 5.4rem;
+        max-height: 5.4rem;
+        background: linear-gradient(180deg, rgba(100, 17, 166, 0.2) 0.01%, rgba(63, 4, 109, 0.2) 100%);
+        transform: rotate(-45deg);
+        border: 3px solid rgba(63, 4, 109, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+
+        @media (min-width: 1140px) {
+            min-width: 10.57rem;
+            min-height: 10.57rem;
+            max-width: 10.57rem;
+            max-height: 10.57rem;
+        }
+    }
+    svg {
+        fill: #b961ff;
+        width: 2.4rem;
+        height: 2.5rem;
+        transform: rotate(45deg);
+        @media (min-width: 1140px) {
+            width: 6.1rem;
+            height: 6.1rem;
+        }
+    }
+    &__name {
+        @media (min-width: 1140px) {
+            max-width: 60%;
+            min-width: 60%;
+        }
+        @media (min-width: 1400px) {
+            max-width: 65%;
+            min-width: 65%;
+        }
+    }
+    h3 {
+        margin-bottom: 0;
+        margin-top: 1rem;
+        margin-left: 3rem;
+        color: #ffffff;
+        font-size: 1.6rem;
+        @media (min-width: 414px) {
+            font-size: 1.8rem;
+        }
+        @media (min-width: 1140px) {
+            margin-top: 0;
+        }
+        @media (min-width: 1400px) {
+            font-size: 2.2rem;
+            width: 100%;
+            text-align: left;
+        }
+    }
+}

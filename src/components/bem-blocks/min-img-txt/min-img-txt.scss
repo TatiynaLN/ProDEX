@@ -4,14 +4,14 @@
     backdrop-filter: blur(6px);
     padding: 4.5rem 4rem;
     margin-bottom: 5rem;
+    transition: all 0.4s;
     &:hover,
     &:focus {
-        .svg {
-            transform: translateX(4rem) matrix3d(-0.8, 0, 0, 0, 0.4, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        &::after {
+            background: rgba(0, 0, 0, 0.6);
             transition: all 0.4s;
         }
     }
-
     &:last-child {
         margin-bottom: 0;
         @media (min-width: 1140px) {
@@ -94,9 +94,6 @@
     }
     .txt {
         @media (min-width: 1140px) {
-            // width: 100%;
-            // min-width: 45rem;
-            // max-width: 59.4rem;
             align-self: flex-start;
             padding-bottom: 4rem;
 
