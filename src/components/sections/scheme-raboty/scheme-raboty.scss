@@ -35,21 +35,7 @@
             margin-left: 0;
         }
     }
-    &:hover,
-    &:focus {
-        &::before {
-            animation-name: shag;
-            animation-duration: 1s;
-            animation-timing-function: ease;
-            // animation-iteration-count: 3;
-            // transform: matrix(1, 0, 0, 1, 0, 0);
-            background-image: linear-gradient(45deg, rgb(204, 102, 255), rgb(86, 11, 123) 51%, rgb(91, 0, 163) 100%);
-            // background-image: linear-gradient(45deg, rgb(91, 0, 163) 28%, rgb(204, 102, 255) 49%, rgb(86, 11, 123) 84%);
-            // @media (min-width: 1140px) {
-            //     transform: matrix(1, 0, 0, 1, 0, 0) translateX(0.5rem);
-            // }
-        }
-    }
+
     &::before {
         counter-increment: shag; /* Инкрементирует счётчик*/
         content: counter(shag);
@@ -82,19 +68,3 @@
         margin-bottom: 0;
     }
 }
-
-// @keyframes shag {
-//     0% {
-//         // transform: matrix(1, 0, 0, 1, 0, 0) translateX(0.5rem);
-//         background-image: linear-gradient(180deg, rgba(185, 97, 255, 0.3) 35.68%, rgba(91, 0, 163, 0.3) 68.75%);
-//     }
-
-//     // 50% {
-//     //     // transform: matrix(-0.5, 0, 0, 1, 0, 0) translateX(0.5rem);
-//     //     background-image: linear-gradient(180deg, rgba(91, 0, 163, 0.3) 45.68%, rgba(185, 97, 255, 0.3) 58.75%);
-//     // }
-//     100% {
-//         // transform: matrix(1, 0, 0, 1, 0, 0) translateX(0.5rem);
-//         background-image: linear-gradient(180deg, rgba(91, 0, 163, 0.3) 68.75%, rgba(185, 97, 255, 0.3) 35.68%);
-//     }
-// }

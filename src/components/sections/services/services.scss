@@ -27,11 +27,11 @@
     margin-bottom: 5rem;
     &::after,
     &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
         @media (min-width: 1140px) {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
         }
     }
     &::after {
@@ -46,6 +46,17 @@
         transform: translate(18.9rem, 6.7rem) rotate(-45deg);
         border: 1px solid rgba(63, 4, 109, 0.7);
     }
+    &:hover,
+    &:focus {
+        .service__svg::before {
+            transition: all 0.4s;
+            width: 100%;
+        }
+        .service__svg::after {
+            transition: all 0.4s;
+            width: 100%;
+        }
+    }
     @media (min-width: 1140px) {
         max-width: 48%;
         justify-content: space-between;
@@ -58,14 +69,34 @@
         min-height: 5.4rem;
         max-width: 5.4rem;
         max-height: 5.4rem;
-        background: linear-gradient(180deg, rgba(100, 17, 166, 0.2) 0.01%, rgba(63, 4, 109, 0.2) 100%);
+        background: transparent;
         transform: rotate(-45deg);
         border: 3px solid rgba(63, 4, 109, 0.2);
         display: flex;
         align-items: center;
         justify-content: center;
         margin-left: 1rem;
-
+        transition: all 0.4s;
+        position: relative;
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            top: 0;
+            transition: all 0.4s;
+        }
+        &::before {
+            width: 0%;
+            background: linear-gradient(180deg, #6411a6 0.01%, #3f046d 100%);
+            left: 0;
+        }
+        &::after {
+            right: 0;
+            width: 100%;
+            background: linear-gradient(180deg, rgba(100, 17, 166, 0.2) 0.01%, rgba(63, 4, 109, 0.2) 100%);
+            border: 3px solid rgba(63, 4, 109, 0.2);
+        }
         @media (min-width: 1140px) {
             min-width: 10.57rem;
             min-height: 10.57rem;
