@@ -33,5 +33,14 @@
     padding: 18.3rem 0;
     p {
         margin-bottom: 3rem;
+        @media (min-width: 1140px) {
+            max-width: 106rem;
+            padding-left: 5rem;
+        }
+    }
+    .btn-border {
+        @media (min-width: 1140px) {
+            margin-left: 9rem;
+        }
     }
 }
