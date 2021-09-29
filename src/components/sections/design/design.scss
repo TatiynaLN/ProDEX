@@ -1,0 +1,64 @@
+.design {
+    background-image: url("../img/icons/fon5.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    margin-top: 10rem;
+    &__blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 900px) {
+            flex-direction: row;
+        }
+    }
+    &__block {
+        width: 100%;
+        @media (min-width: 900px) {
+            padding-left: 13rem;
+        }
+        h2 {
+            padding-left: 4rem;
+            &::before {
+                transform: translate(0rem, 2.1rem);
+            }
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        @media (min-width: 900px) {
+            max-width: 70%;
+            justify-self: flex-start;
+        }
+        @media (min-width: 1640px) {
+            max-width: 50%;
+        }
+    }
+    &__block-img {
+        height: 35rem;
+        width: 11.7rem;
+        position: relative;
+        z-index: 0;
+        @media (min-width: 900px) {
+            margin-left: 10rem;
+        }
+        @media (min-width: 1440px) {
+            margin-left: 17rem;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 29rem;
+            height: 29rem;
+            background: linear-gradient(180deg, rgba(100, 17, 166, 0.2) 0.01%, rgba(63, 4, 109, 0) 100%);
+            transform: rotate(45deg);
+            top: 0;
+            z-index: -1;
+            @media (min-width: 900px) {
+                width: 40rem;
+                height: 40rem;
+            }
+        }
+    }
+}

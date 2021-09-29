@@ -1,0 +1,35 @@
+.promotion {
+    background-image: url("../img/icons/fon6.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    h2 {
+        font-size: 2.6rem;
+        @media (min-width: 411px) {
+            font-size: 2.8rem;
+        }
+    }
+    &__blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 900px) {
+            flex-direction: row;
+            gap: 10rem;
+        }
+    }
+    &__block-img {
+        margin-bottom: 5rem;
+        width: 27.2rem;
+        max-height: 35.7rem;
+        @media (min-width: 1140px) {
+            margin-left: 8rem;
+        }
+    }
+    &__block {
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}

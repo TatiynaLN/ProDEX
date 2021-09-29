@@ -23,3 +23,15 @@
         max-width: 86rem;
     }
 }
+// страница О НАС
+.banner-about {
+    background-image: url("../img/icons/fon3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding: 18.3rem 0;
+    p {
+        margin-bottom: 3rem;
+    }
+}
