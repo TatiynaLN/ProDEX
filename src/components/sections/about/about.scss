@@ -15,6 +15,10 @@
 }
 .about-wrapp {
     width: 100%;
+    background-image: url("../img/icons/fon-crug.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     gap: 5rem;

@@ -1,0 +1,47 @@
+.block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media (min-width: 900px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+    }
+    &__img {
+        width: 17.3rem;
+        height: 24.8rem;
+        margin-bottom: 5rem;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url("../img/icons/podder.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 23.8rem;
+            height: 17rem;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            transform: translate(-13rem, 3.5rem);
+        }
+    }
+    &__txt {
+        @media (min-width: 900px) {
+            max-width: 60%;
+            transform: skew(35deg);
+        }
+        @media (min-width: 1440px) {
+            max-width: 70%;
+        }
+        p {
+            @media (min-width: 900px) {
+                transform: skew(-35deg);
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
