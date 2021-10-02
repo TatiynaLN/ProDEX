@@ -8,9 +8,8 @@
         height: 100%;
         left: 0;
         top: 0;
-        background: linear-gradient(180deg, rgba(100, 17, 166, 0.4) 0.01%, rgba(63, 4, 109, 0.4) 100%);
-        filter: blur(20px);
         z-index: -1;
+        background: linear-gradient(180deg, rgba(100, 17, 166, 0.4) 0.01%, rgba(63, 4, 109, 0.4) 100%);
     }
     h2 {
         padding: 0;
@@ -46,5 +45,27 @@
     }
     img {
         height: 100%;
+    }
+}
+// ГЛАВНАЯ
+.consultation.consultation-home {
+    &::after {
+        filter: blur(20px);
+    }
+}
+// Стараница О НАС
+.consultation-banner {
+    background-image: url("../img/icons/fon8.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .consul__txt {
+        max-width: 100%;
+    }
+    p {
+        @media (min-width: 1140px) {
+            max-width: 70%;
+            align-self: flex-start;
+        }
     }
 }

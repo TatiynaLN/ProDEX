@@ -23,8 +23,8 @@
         max-width: 86rem;
     }
 }
-// страница О НАС
-.banner-about {
+// страница О НАС и Услуги
+.banner2 {
     background-image: url("../img/icons/fon3.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,5 +42,11 @@
         @media (min-width: 1140px) {
             margin-left: 9rem;
         }
+    }
+}
+// УСЛУГИ
+.banner-services {
+    .title {
+        margin-bottom: 3rem;
     }
 }

@@ -1,0 +1,153 @@
+.service2 {
+    padding: 5rem 0;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+        @media (min-width: 900px) {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 5rem;
+            padding-left: 10rem;
+        }
+    }
+    &__block-image {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 3rem;
+        @media (min-width: 900px) {
+            margin-bottom: 0;
+            max-width: 30rem;
+        }
+    }
+    h4 {
+        font-family: "SpectralSC-SemiBold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 6rem;
+        line-height: 160.2%;
+        text-align: center;
+        transform: rotate(-90deg) translate(-11rem, -10.5rem);
+        align-self: baseline;
+        background-image: linear-gradient(180deg, rgba(185, 97, 255, 0.3) 35.68%, rgba(91, 0, 163, 0.3) 68.75%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+    }
+    &__block-img {
+        // width: 21.3rem;
+        height: 31.6rem;
+        transform: translateX(-20.5rem);
+        img {
+            max-width: 21.3rem;
+            min-width: 21.3rem;
+            min-height: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &__block-txt {
+        margin-bottom: 3rem;
+        @media (min-width: 900px) {
+            margin-bottom: 0;
+        }
+        ul {
+            margin-top: 4rem;
+            margin-left: 5rem;
+            @media (min-width: 1440px) {
+                padding-left: 5rem;
+                margin-left: 0rem;
+            }
+        }
+        li {
+            font-family: "EBGaramond-Regular";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.8rem;
+            line-height: 170%;
+            color: #b961ff;
+            position: relative;
+            padding-left: 3.3rem;
+            margin-bottom: 1rem;
+            &::before {
+                position: absolute;
+                content: "";
+                background: radial-gradient(
+                    50.04% 50.04% at 50.04% 49.93%,
+                    #ffffff 0%,
+                    #cbcbcb 13.49%,
+                    #8e8e8e 31.09%,
+                    #5b5b5b 48.03%,
+                    #343434 63.83%,
+                    #171717 78.22%,
+                    #060606 90.74%,
+                    #000000 100%
+                );
+                opacity: 0.77;
+                width: 1.8rem;
+                height: 1.8rem;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .btn-border {
+        @media (min-width: 900px) {
+            margin-left: auto;
+        }
+    }
+}
+.service2-revert {
+    h4 {
+        font-size: 4rem;
+        @media (min-width: 900px) {
+            transform: rotate(-90deg) translate(-11rem, -17rem);
+            order: 1;
+        }
+    }
+
+    .service2__block-image {
+        @media (min-width: 900px) {
+            order: 1;
+            max-width: 30rem;
+        }
+    }
+    .service2__block-img {
+        @media (min-width: 900px) {
+            transform: translateX(0rem);
+        }
+    }
+    .service2__block-img,
+    .service2__block-txt {
+        @media (min-width: 900px) {
+            order: 0;
+        }
+    }
+    .service2__block-txt {
+        @media (min-width: 900px) {
+            max-width: 93.4rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            text-align: right;
+        }
+        @media (min-width: 1440px) {
+            justify-content: flex-end;
+        }
+    }
+    ul,
+    li {
+        @media (min-width: 900px) {
+            text-align: left;
+        }
+    }
+    .btn-border {
+        @media (min-width: 900px) {
+            margin-right: auto;
+            margin-left: 0;
+        }
+    }
+}
