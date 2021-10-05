@@ -1,0 +1,14 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'ProDEX';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        include ./../components/sections/banner/banner-service.pug
+        include ./../components/sections/vidu-rabot/vidu-rabot.pug
+        include ./../components/sections/table/table-uslugi.pug
+        include ./../components/sections/consultation/consultation.pug
+        include ./../components/sections/footer/footer.pug

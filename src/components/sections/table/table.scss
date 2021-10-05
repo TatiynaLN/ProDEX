@@ -1,0 +1,84 @@
+.table {
+    padding-bottom: 19rem;
+    table {
+        overflow-x: auto;
+        display: block;
+        width: 100%;
+    }
+    thead {
+        background: #ffe3d3;
+    }
+    tbody {
+        tr {
+            &:nth-child(2n) {
+                position: relative;
+                border-top: 1px solid #ffe3d3;
+                border-bottom: 1px solid #ffe3d3;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: rgba(255, 227, 211, 0.1);
+                    filter: blur(5px);
+                }
+            }
+        }
+        td {
+            color: #ffffff;
+        }
+    }
+    /* Стили для скролла */
+    ::-webkit-scrollbar {
+        height: 5rem;
+    }
+    ::-webkit-scrollbar-track {
+        background: linear-gradient(0deg, transparent 45%, rgb(255, 227, 211) 51%, transparent 50%);
+        height: 0.3rem;
+    }
+    ::-webkit-scrollbar-thumb {
+        // box-shadow: inset 0 0 6px rgba(122, 25, 125, 0.9);
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 50%;
+        background-image: url("../img/icons/scroll.svg");
+        background-repeat: no-repeat;
+        background-size: 2.7rem;
+        background-position: center center;
+    }
+}
+tfoot {
+    td {
+        &:last-child {
+            padding-right: 5rem;
+            min-width: 28rem;
+            max-width: 28rem;
+        }
+        &:first-child {
+            padding-left: 5rem;
+        }
+    }
+    span {
+        font-family: "NEXTART-Bold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 170%;
+        color: #f28d55;
+    }
+    .btn {
+        width: 20.8rem;
+        height: 4.3rem;
+        background: transparent;
+        transform: skew(-20deg);
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #ffffff;
+        &:hover,
+        &:focus {
+            box-sizing: border-box;
+        }
+    }
+}

@@ -93,3 +93,52 @@ p {
     line-height: 170%;
     color: #ffffff;
 }
+td,
+th {
+    text-align: center;
+    &:first-child {
+        text-align: left;
+    }
+}
+thead {
+    th {
+        font-family: "SpectralSC-SemiBold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 160.2%;
+        text-align: center;
+        color: #000000;
+        padding: 3.5rem 5rem;
+    }
+}
+tbody {
+    td {
+        font-family: "EBGaramond-Regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 170%;
+        color: #ffffff;
+        padding: 3rem 5rem;
+    }
+}
+tfoot {
+    td {
+        font-family: "SpectralSC-SemiBold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 160.2%;
+        color: #ffffff;
+        padding: 3rem 0rem;
+    }
+    span {
+        font-family: "NEXTART-Bold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 170%;
+        color: #f28d55;
+    }
+}

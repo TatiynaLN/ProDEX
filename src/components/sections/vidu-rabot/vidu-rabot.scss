@@ -1,0 +1,100 @@
+.vidu-rabot {
+    h2 {
+        margin-bottom: 14.5rem;
+    }
+}
+.shagi-rabot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14.5rem;
+    @media (min-width: 1240px) {
+        gap: 14.5rem 5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+.shag-rabot {
+    position: relative;
+    width: 100%;
+    padding: 10rem 5rem;
+    box-shadow: 4px 6px 30px rgba(255, 227, 211, 0.08);
+    backdrop-filter: blur(6px);
+    max-width: 52rem;
+    text-align: center;
+    align-self: stretch;
+    transition: all 0.4s;
+    @media (min-width: 1240px) {
+        max-width: 30%;
+    }
+    &:hover,
+    &:focus {
+        transition: all 0.4s;
+        box-shadow: inset 4px 6px 30px rgba(255, 227, 211, 0.08);
+    }
+    &:nth-child(1n) {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/icons/fon-block.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    &:nth-child(2n) {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url("../img/icons/fon-block1.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    &:nth-child(3n) {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url("../img/icons/fon-block2.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    &__image {
+        width: 13.5rem;
+        height: 13.5rem;
+        background-image: url("../img/icons/border.svg");
+        transform: rotate(-45deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -26%;
+        left: 40%;
+    }
+    &__img {
+        // transform: rotate(45deg);
+        width: 5.4rem;
+        height: 5.4rem;
+        svg {
+            fill: #b961ff;
+        }
+        position: relative;
+        left: 0;
+        transform: translate(0, -13rem);
+        margin: auto;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 20.5rem;
+            height: 20.5rem;
+            background-image: url("../img/icons/border.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__txt {
+        h3 {
+            color: #ffe3d3;
+        }
+    }
+}
