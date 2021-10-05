@@ -1,0 +1,117 @@
+.how-order {
+    padding: 5rem 0;
+    background-image: url("../img/icons/fon3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+.shagi-order {
+    counter-reset: shag-order;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+}
+.shag-order {
+    padding-top: 31rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 26.8rem;
+    @media (min-width: 768px) {
+        padding-top: 8.5rem;
+        max-width: 51.8rem;
+    }
+    &:nth-child(1) {
+        @media (min-width: 768px) {
+            margin-right: auto;
+        }
+    }
+    &:nth-child(3) {
+        @media (min-width: 768px) {
+            margin-left: auto;
+        }
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url("../img/icons/order.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        width: 20.5rem;
+        height: 28.9rem;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        @media (min-width: 768px) {
+            left: 0%;
+            transform: translateX(-0%);
+        }
+    }
+    &::before {
+        counter-increment: shag-order; /* Инкрементирует счётчик*/
+        content: counter(shag-order);
+        font-family: "NEXTART-Bold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12rem;
+        width: 100%;
+        color: #b961ff;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0px, 25%);
+        @media (min-width: 768px) {
+            width: 20.5rem;
+            left: 0%;
+            transform: translate(0px, 25%);
+        }
+    }
+    h3,
+    .shag-order__txt {
+        @media (min-width: 768px) {
+            max-width: 33rem;
+            margin-left: auto;
+            padding-right: 4rem;
+        }
+    }
+    .shag-order__txt {
+        @media (min-width: 768px) {
+            max-width: 34rem;
+            transform: skew(35deg);
+            text-align: left;
+        }
+        p {
+            @media (min-width: 768px) {
+                transform: skew(-35deg);
+            }
+        }
+    }
+    h3 {
+        margin-bottom: 1rem;
+        @media (min-width: 768px) {
+            position: relative;
+            margin-bottom: 7.9rem;
+            text-align: right;
+        }
+        &::before {
+            @media (min-width: 768px) {
+                position: absolute;
+                content: "";
+                width: 9.2rem;
+                height: 6.9rem;
+                border-top: 1px solid rgba(185, 97, 255, 0.8);
+                border-right: 1px solid rgba(185, 97, 255, 0.8);
+                box-sizing: border-box;
+                transform: rotate(45deg);
+                top: -2.5rem;
+                right: 0;
+            }
+        }
+    }
+}

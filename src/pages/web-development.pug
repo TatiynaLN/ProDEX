@@ -1,0 +1,159 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'ProDEX';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        section.banner-service 
+            .container
+                .banner-service__blocks 
+                    .banner-service__img
+                        img(src="./wp-content/themes/prodex/assets/img/icons/development.svg", alt="Веб-разработчик")
+                    .banner-service__txt
+                        h1.title Веб-разработка
+                        p Создаём эффективные инструменты для решения задач Вашего бизнеса. 
+                            |Определяем цели и интересы пользователей. Концепцию строим на преимуществах вашего бизнеcа.
+                        button.btn-border
+                            span ⟶
+                            |Оставить заявку
+        section.scheme-raboty.p-t-b
+            .container 
+                h2 Схема работы
+                p Работу делим на этапы, каждый из которых согласовываем с заказчиком. Большинство этапов можем 
+                    |вести параллельно, что ускоряет процесс, без потери в качестве.
+                .shagi
+                    .shag
+                        h3 Аналитика
+                        p Включает в себя анализ конкурентов, создание структуры сайта, создание прототипа.
+                    .shag
+                        h3 Креатив
+                        p Разработка дизайна сайта с соблюдением современных трендов и стилей.
+                    .shag
+                        h3 Разработка
+                        p Верстка и анимация на сайте. Адаптивный дизайн под все современные устройства.
+                    .shag
+                        h3 Развитие
+                        p После запуска сайта организуем эффективное продвижение в поисковых системах и будем сопровождать контентное наполнение сайта.
+        section.table.table-uslugi
+            .container 
+                h2 Сроки и тарифы на создание сайтов
+                table 
+                    thead 
+                        tr 
+                            th Параметр/тариф
+                            th Минимальный
+                            th Оптимальный
+                            th Максимум
+                    tbody 
+                        tr 
+                            td Сроки разработки (рабочие дни)
+                            td ~30 дней
+                            td 60 дней
+                            td 90 дней
+                        tr 
+                            td Система управления сайтов
+                            td WordPress
+                            td WordPress
+                            td WordPress
+                        tr 
+                            td Количество уникальных страниц
+                            td До 15
+                            td До 25
+                            td 30 и более
+                        tr 
+                            td Разработка авторского дизайна
+                            td Нет
+                            td Нет
+                            td Да
+                        tr 
+                            td Адаптивная кроссбраузерная вёрстка
+                            td Да
+                            td Да
+                            td Нет
+                        tr 
+                            td Фото/видео-галерея
+                            td Да
+                            td Да
+                            td Да
+                        tr 
+                            td Формы обратной связи
+                            td Да
+                            td Да
+                            td Да
+                        tr 
+                            td Интерактивная карта компании (2GIS/Яндекс/Google)
+                            td Да
+                            td Да
+                            td Да
+                        tr 
+                            td Текстовое наполнение
+                            td Да
+                            td Да
+                            td Да
+                        tr 
+                            td SEO-оптимизация
+                            td Базовая
+                            td Стандартная
+                            td Продвинутая
+                        tr 
+                            td Техническая поддержка (внесение мелких правок, консультации)
+                            td 2 недели
+                            td 1 месяц
+                            td 2 месяца
+                        tr 
+                            td Копирайтинг (корректировка текстов)
+                            td Да
+                            td Да
+                            td Да
+                        tr 
+                            td Виджет обратного звонка
+                            td Да
+                            td Да
+                            td Да
+                        tr 
+                            td Блог (модуль статей)
+                            td Да
+                            td Да
+                            td Да
+                        tr 
+                            td Составление ТЗ и прототипирование
+                            td Нет
+                            td Да
+                            td Да
+                        tr 
+                            td Анимационные эффекты (parallax, css)
+                            td Нет
+                            td Да
+                            td Да
+                        tr 
+                            td Разграничение прав доступа, личные кабинеты, форма регистрации
+                            td Нет
+                            td Нет
+                            td Да
+                        tr 
+                            td Поддержка хостинга и доменного имени сайта
+                            td Да
+                            td Да
+                            td Да
+                    tfoot 
+                        tr 
+                            td Стоимость тарифа
+                            td От 
+                                span 50 000 
+                                |рублей
+                            td От 
+                                span 75 000 
+                                |рублей
+                            td От 
+                                span 100 000 
+                                |рублей
+                        tr 
+                            td
+                            td: button.btn Заказать
+                            td: button.btn Заказать
+                            td: button.btn Заказать
+        include ./../components/sections/how-order/how-order.pug
+        include ./../components/sections/footer/footer.pug
