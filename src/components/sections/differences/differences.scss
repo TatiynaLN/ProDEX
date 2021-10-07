@@ -1,0 +1,100 @@
+.differences {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    @media (min-width: 1440px) {
+        padding-bottom: 7rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+        @media (min-width: 414px) {
+            font-size: 2.8rem;
+        }
+        @media (min-width: 1540px) {
+            max-width: 60%;
+            margin-right: auto;
+        }
+    }
+}
+.differences-blocks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    @media (min-width: 900px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 0;
+    }
+}
+.differences-block {
+    width: 100%;
+    @media (min-width: 900px) {
+        max-width: 50%;
+        margin-right: 5rem;
+    }
+    @media (min-width: 1440px) {
+        position: relative;
+        padding-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 8rem;
+    }
+    &:last-child {
+        @media (min-width: 900px) {
+            margin-right: 0;
+        }
+    }
+    &:nth-child(2n) {
+        text-align: right;
+        @media (min-width: 900px) {
+            text-align: left;
+        }
+        h3 {
+            margin-left: auto;
+            @media (min-width: 900px) {
+                margin-left: 0;
+            }
+        }
+    }
+    &__img {
+        display: none;
+        @media (min-width: 1440px) {
+            display: block;
+            position: absolute;
+            height: 70%;
+            max-width: 15.7rem;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        @media (min-width: 1540px) {
+            height: 95%;
+        }
+        img {
+            max-height: 98%;
+            min-height: 98%;
+        }
+    }
+    &__txt {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: 4px 6px 30px rgba(255, 227, 211, 0.08);
+        backdrop-filter: blur(6px);
+        padding: 4rem 0;
+        @media (min-width: 900px) {
+            padding: 4rem;
+            height: 100%;
+        }
+        @media (min-width: 1440px) {
+            height: 90%;
+            width: 85%;
+            padding-left: 10rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}
