@@ -33,3 +33,46 @@
         }
     }
 }
+.we-weapons {
+    h2 {
+        padding-left: 0;
+        &::before {
+            display: none;
+        }
+    }
+
+    .promotion__blocks {
+        width: 100%;
+        @media (min-width: 900px) {
+            justify-content: flex-start;
+        }
+    }
+    .promotion__block-img {
+        background-image: url("../img/icons/fon-or.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        min-height: 19.4rem;
+        img {
+            height: 100%;
+        }
+    }
+    .promotion__block-img {
+        @media (min-width: 900px) {
+            max-width: 40%;
+            min-width: 40%;
+            min-height: 22.3rem;
+        }
+        @media (min-width: 1140px) {
+            margin-left: 0rem;
+        }
+    }
+    .promotion__block {
+        @media (min-width: 900px) {
+            max-width: 55%;
+        }
+        @media (min-width: 1540px) {
+            max-width: 57rem;
+        }
+    }
+}

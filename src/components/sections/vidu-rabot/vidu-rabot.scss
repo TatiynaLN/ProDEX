@@ -1,3 +1,4 @@
+.advantages,
 .vidu-rabot {
     h2 {
         margin-bottom: 14.5rem;
@@ -97,6 +98,41 @@
     &__txt {
         h3 {
             color: #ffe3d3;
+        }
+    }
+}
+.advantages {
+    .shag-rabot {
+        @media (min-width: 1540px) {
+            max-width: 22%;
+        }
+        &:nth-child(1n) {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                url("../img/icons/preim-fon.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        &:nth-child(2n) {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                url("../img/icons/preim-fon1.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        &:nth-child(3n) {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                url("../img/icons/preim-fon2.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        &:nth-child(4n) {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                url("../img/icons/preim-fon3.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
         }
     }
 }
