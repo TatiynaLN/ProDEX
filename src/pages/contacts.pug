@@ -1,0 +1,92 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'ProDEX';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        section.forms.p-t-b 
+            .container 
+                h1.title-contacts Наши контакты
+                .forms-block.forms-contacts
+                    .forms-block__left
+                        h3 Возникли вопросы или есть проект?
+                        p Заполните вашу заявку в форме справа.
+                        p Для дополнительной связи напишите нам в соц.сетях, на e-mail или просто позвоните 
+                            |и мы подробно обсудим Ваш проект
+                        .contacts Наш телефон: 
+                            a(href="tel:+79277339053") +7 (927) 733-90-53
+                        .contacts Мы в социальных сетях: 
+                            ul.social 
+                                li: a(href="" target="_blank")
+                                    svg(width="45" height="45")
+                                        use(xlink:href="./wp-content/themes/prodex/assets/img/icons/sprite.svg#vk")
+                                li: a(href="" target="_blank") 
+                                    svg(width="45" height="45")
+                                        use(xlink:href="./wp-content/themes/prodex/assets/img/icons/sprite.svg#telegram")
+                        .contacts Наш E-mail: 
+                            a(href="mailto:sales@pro-dex.ru") sales@pro-dex.ru
+                    form.form
+                            label(for="") 
+                                span Ваше имя:
+                                input._req(type="text" name='user-name' placeholder="" required="required")
+                            label(for="") 
+                                span Ваш телефон:
+                                input._req.phone-input(type="text" name="user-phone" placeholder="" required="required")
+                            label(for="") 
+                                span Ваш E-mail:
+                                input._req(type="email" name="user-email" placeholder="" required="required")
+                            label(for="") 
+                                span Краткое описание проекта:
+                                textarea(name="text", cols="1", rows="1" ) 
+                            .budget-list
+                                h3 Ваш бюджет:
+                                .radio-wrap
+                                    input._req#price-1(type="radio" name="price" value="от 50 000 руб.")
+                                    label(for="price-1") от 
+                                        span 50 000 
+                                        |руб.
+                                .radio-wrap
+                                    input._req#price-2(type="radio" name="price" value="от 75 000 руб.")
+                                    label(for="price-2") от 
+                                        span 75 000 
+                                        |руб.
+                                .radio-wrap
+                                    input._req#price-3(type="radio" name="price" value="от 100 000 руб.")
+                                    label(for="price-3") от 
+                                        span 100 000 
+                                        |руб.
+                                .radio-wrap
+                                    input._req#price-4(type="radio" name="price" value="от 150 000 руб.")
+                                    label(for="price-4") от 
+                                        span 150 000 
+                                        |руб.
+                            .quiz__source-list
+                                h3 Ваш бюджет:
+                                .radio-wrap
+                                    input._req#source-1(type="radio" name="source" value="Из поисковых систем")
+                                    label(for="source-1") Из поисковых систем
+                                .radio-wrap
+                                    input._req#source-2(type="radio" name="source" value="Из социальных сетей")
+                                    label(for="source-2") Из социальных сетей
+                                .radio-wrap
+                                    input._req#source-3(type="radio" name="source" value="Рекомендации ")
+                                    label(for="source-3") Рекомендации
+                            .quiz__form-file__wrap
+                                input.quiz__form-file#quiz__file(type="file" name="quiz__file[]" multiple="")
+                                label.quiz__form-file-button(for="quiz__file")
+                                    span.input__file-icon-wrapper
+                                        img.input__file-icon(src="./wp-content/themes/prodex/assets/img/icons/paper-clip.svg" alt="Прикрепить файл" width="25")
+                                    span.input__file-button-text Прикрепить файл
+                            .form__bottom
+                                .form__policy
+                                    input._req.chec#chec(type="checkbox" required="required" checked)
+                                    label.form-chec(for="chec") Вы соглашаетесь 
+                                            a(href="#!" target="_blank") с условиями обработки персональных данных
+                                button.btn-border
+                                    span ⟶
+                                    |Оставить заявку
+        include ./../components/sections/directions/directions.pug
+        include ./../components/sections/footer/footer.pug
