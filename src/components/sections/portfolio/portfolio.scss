@@ -1,0 +1,179 @@
+.portfolio {
+    background-image: url("../img/icons/fon-port.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding: 18.3rem 0;
+    position: relative;
+}
+.belt__tags {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-bottom: 10rem;
+    @media (min-width: 620px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .belt__tags-link {
+        font-family: "SpectralSC-SemiBold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 160.2%;
+        color: #ffffff;
+        padding-left: 5.4rem;
+        text-align: left;
+        position: relative;
+        @media (min-width: 620px) {
+            font-size: 2.2rem;
+        }
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            height: 2rem;
+            width: 2rem;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: all 0.4s;
+            @media (min-width: 620px) {
+                height: 3.4rem;
+                width: 3.4rem;
+            }
+        }
+        &::before {
+            background-image: url("../img/icons/tag.svg");
+        }
+        &::after {
+            transform: scale(0) translateY(-50%);
+            background-image: url("../img/icons/tag1.svg");
+        }
+        &:hover,
+        &:focus {
+            &::after {
+                transform: scale(1) translateY(-50%);
+                transition: all 0.4s;
+            }
+            &::before {
+                transform: scale(0) translateY(-50%);
+                transition: all 0.4s;
+            }
+        }
+    }
+    .link-active {
+        transition: all 0.4s;
+        &::after {
+            transform: scale(1) translateY(-50%);
+            transition: all 0.4s;
+        }
+        &::before {
+            transform: scale(0) translateY(-50%);
+            transition: all 0.4s;
+        }
+    }
+}
+.portfolio-wrap {
+    width: 100%;
+    padding-top: 10rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+    @media (min-width: 1440px) {
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100vw;
+        height: 26.1rem;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -5rem);
+        background: linear-gradient(180deg, rgba(100, 17, 166, 0.4) 0.01%, rgba(63, 4, 109, 0.4) 100%);
+        z-index: -1;
+        @media (min-width: 1440px) {
+            transform: translate(-50%, -2rem);
+        }
+    }
+    &__block {
+        width: 100%;
+        max-width: 40.7rem;
+        min-height: 26.7rem;
+        position: relative;
+        @media (min-width: 1440px) {
+            max-width: 30%;
+        }
+        &:hover,
+        &:focus {
+            .portfolio-wrap__block-hover {
+                transform: scale(1);
+                transition: all 0.5s;
+                opacity: 1;
+                border-radius: 0;
+            }
+        }
+    }
+    &__block-img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img {
+            max-width: fit-content;
+        }
+    }
+    &__block-hover {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+        transform: scale(0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(20, 0, 35, 0.8);
+        backdrop-filter: blur(8px);
+        padding: 6rem 3rem;
+        border-radius: 50%;
+        @media (min-width: 620px) {
+            padding: 8rem 6rem;
+        }
+    }
+    a {
+        width: 100%;
+        color: #fff;
+        font-family: "EBGaramond-Regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 170%;
+        text-align: center;
+        display: block;
+    }
+    h3 {
+        a {
+            font-family: "SpectralSC-SemiBold";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.2rem;
+            line-height: 160.2%;
+            color: #ffffff;
+        }
+        margin-bottom: 2rem;
+        width: 100%;
+        border-bottom: 2px solid #f28d55;
+    }
+}
