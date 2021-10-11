@@ -1,0 +1,29 @@
+.other-projects {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 26.1rem;
+        top: 50%;
+        left: 0;
+        transform: translateY(-60%);
+        background: linear-gradient(180deg, rgba(100, 17, 166, 0.4) 0.01%, rgba(63, 4, 109, 0.4) 100%);
+    }
+}
+.swiper-projects {
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-slide {
+    max-width: 40.7rem;
+    .portfolio-wrap__block {
+        @media (min-width: 1440px) {
+            max-width: 39.59rem;
+        }
+    }
+}
+.swiper-wrapper__projects {
+    width: 100%;
+    max-width: 100%;
+}

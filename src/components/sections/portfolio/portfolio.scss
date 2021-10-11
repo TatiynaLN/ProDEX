@@ -177,3 +177,79 @@
         border-bottom: 2px solid #f28d55;
     }
 }
+.portfolio-wrap__block {
+    .portfolio-wrap__block-hover {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+        transform: scale(0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(20, 0, 35, 0.8);
+        backdrop-filter: blur(8px);
+        padding: 6rem 3rem;
+        border-radius: 50%;
+        @media (min-width: 620px) {
+            padding: 8rem 6rem;
+        }
+    }
+    a {
+        width: 100%;
+        color: #fff;
+        font-family: "EBGaramond-Regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 170%;
+        text-align: center;
+        display: block;
+    }
+    h3 {
+        a {
+            font-family: "SpectralSC-SemiBold";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.2rem;
+            line-height: 160.2%;
+            color: #ffffff;
+        }
+        margin-bottom: 2rem;
+        width: 100%;
+        border-bottom: 2px solid #f28d55;
+    }
+}
+// страница Проект
+
+.o-project {
+    padding-top: 18rem;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+            50% 60% at -20% 50%,
+            rgba(108, 0, 193, 0.4) 0%,
+            rgba(91, 0, 163, 0.4) 8.58%,
+            rgba(70, 0, 124, 0.4) 26.61%,
+            rgba(47, 0, 84, 0.4) 44.09%,
+            rgba(34, 0, 61, 0.4) 60.59%,
+            rgba(15, 0, 28, 0.4) 75.86%,
+            rgba(7, 0, 13, 0.4) 89.45%,
+            rgba(0, 0, 0, 0.4) 100%
+        );
+        opacity: 0.65;
+        z-index: -1;
+    }
+    .service2__block-image h4 {
+        transform: rotate(-90deg) translate(-11rem, -18rem);
+    }
+    .service2__block-txt {
+        @media (min-width: 900px) {
+            align-self: center;
+        }
+    }
+}

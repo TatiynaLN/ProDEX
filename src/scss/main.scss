@@ -4,9 +4,6 @@
 // Миксины
 @import "./../scss/global/mixins";
 
-// Сброс дефолтных стилей браузера
-@import "./../scss/global/normalize";
-
 // Сброс дефолтных стилей браузера (дополнительный)
 @import "./../scss/global/global";
 
@@ -66,3 +63,7 @@
 @import "./../components/sections/differences/differences";
 // Портфолио
 @import "./../components/sections/portfolio/portfolio";
+// Проект
+@import "./../components/sections/tasks/tasks";
+@import "./../components/sections/photo-project/photo-project";
+@import "./../components/sections/other-projects/other-projects";

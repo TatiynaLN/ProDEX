@@ -1,0 +1,80 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'ProDEX';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        section.o-project.p-b
+            .container 
+                h1.titles Проект
+                .service2    
+                    h3 О проекте
+                    .service2__block
+                        .service2__block-image
+                            h4 О проекте
+                            .service2__block-img
+                                img(src="./wp-content/themes/prodex/assets/img/icons/dizi.svg", alt="Дизайнер")
+                        .service2__block-txt
+                            p  Здесь должно быть описание компании и сути проета. Здесь должно быть описание 
+                                |компании и сути проета. Здесь должно быть описание компании и сути проета. Здесь 
+                                |должно быть описание компании и сути проета.Здесь должно быть описание компании и 
+                                |сути проета.Здесь должно быть описание компании и сути проета.Здесь должно быть 
+                                |описание компании и сути проета. Здесь должно быть описание компании и сути проета. 
+                                |Здесь должно быть описание компании и сути проета. Здесь должно быть описание компании 
+                                |и сути проета.Здесь должно быть описание компании и сути проета. Здесь должно быть 
+                                |описание компании и сути проета.Здесь должно быть описание компании и сути проета.
+                    //- a.btn-border(href="") 
+                    //-                 span ⟶
+                    //-                 |Узнать подробнее
+        include ./../components/sections/tasks/tasks.pug
+        include ./../components/sections/photo-project/photo-project.pug
+        section.concept
+            .container 
+                h3 Проектирование и дизайн-концепция
+                .block
+                    .block__img
+                        img(src="./wp-content/themes/prodex/assets/img/icons/development2.svg", alt="Поддержка")
+                    .block__txt
+                        p Рассказываем о том, как мы готовились к проету, как изучали конкурентов и прочее. 
+                            |Какую мысль заложли, почему выбрали тот или иной стиль, цвета и т.д. 
+                            | Рассказываем о том, как мы готовились к проету, как изучали конкурентов и
+                            | прочее. Какую мысль заложли, почему выбрали тот или иной стиль, цвета и 
+                            |т.д. Рассказываем о том, как мы готовились к проету, как изучали конкурентов 
+                            |и прочее. Какую мысль заложли, почему выбрали тот или иной стиль, цвета и т.д. 
+                            |Рассказываем о том, как мы готовились к проету, как изучали конкурентов и прочее.
+                            | Какую мысль заложли, почему выбрали тот или иной стиль, цвета и т.д. Рассказываем 
+                            |о том, как мы готовились к проету, как изучали конкурентов и прочее. Какую мысль заложли, 
+                            |почему выбрали тот или иной стиль, цвета и т.д. 
+        section.photo-project.p-t-b
+            .containers 
+                .projects.projects-after
+                    .projects__txt
+                        h3 Что мы сделали
+                        p Мы выбрали такой-то шрифт, такой-то цвет, вот посмотрите на этих картинках.... 
+                            |1Мы выбрали такой-то шрифт, такой-то цвет, вот посмотрите на этих картинках....
+                            | Мы выбрали такой-то шрифт, такой-то цвет, вот посмотрите на этих картинках.... 
+                            |Мы выбрали такой-то шрифт, такой-то цвет, вот посмотрите на этих картинках.... 
+                    .projects__fotos
+                        .projects__foto
+                            img(src="./wp-content/themes/prodex/assets/img/detox.jpg", alt="Технолгии")
+                        .projects__foto
+                            img(src="", alt="")
+        section.technol
+            .container 
+                .cartochci
+                    .cartochci__block
+                        h3 Технологии Backend
+                        p fastCGI(php-fpm) + nginx + MariaDB в изолированных Docker контейнерах с оркестрацией на
+                            | хост-машине с установленной *nix системой (CentOS 7) php7.2 + Bitrix Framework
+                    .cartochci__block
+                        h3 Технологии Frontend
+                        p Sass + js + React + Redux Cборка: pug + Babel + Webpack + Gulp
+                a.btn-border(href="") 
+                                    span ⟶
+                                    |Перейти на сайт
+        include ./../components/sections/form/form.pug
+        include ./../components/sections/other-projects/other-projects.pug
+        include ./../components/sections/footer/footer.pug

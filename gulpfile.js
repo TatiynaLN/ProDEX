@@ -51,7 +51,7 @@ const paths = {
         watch: ['./src/components/**/*.pug', './src/mixins-pug/**/*.pug', './src/pages/**/*.pug', './src/layouts/**/*.pug']
     },
     scss: {
-        src: ['./src/scss/**/*.scss', './src/components/**/*.scss'],
+        src: './src/scss/main.scss',
         dest: `${themePath}/css`,
         watch: ['./src/scss/**/*.scss', './src/components/**/*.scss']
     },
