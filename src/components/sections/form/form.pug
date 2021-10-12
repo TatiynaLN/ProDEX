@@ -13,18 +13,18 @@ section.forms.p-t-b
                         svg(width="45" height="45")
                             use(xlink:href="./wp-content/themes/prodex/assets/img/icons/sprite.svg#telegram")
             form.form
-                    label(for="") 
+                    label(for="name") 
                         span Ваше имя:
-                        input._req(type="text" name='user-name' placeholder="" required="required")
-                    label(for="") 
+                        input._req#name(type="text" name='user-name' placeholder="" required="required")
+                    label(for="phone") 
                         span Ваш телефон:
-                        input._req.phone-input(type="text" name="user-phone" placeholder="" required="required")
-                    label(for="") 
+                        input._req.phone-input#phone(type="text" name="user-phone" placeholder="" required="required")
+                    label(for="email") 
                         span Ваш E-mail:
-                        input._req(type="email" name="user-email" placeholder="" required="required")
-                    label(for="") 
+                        input._req#email(type="email" name="user-email" placeholder="" required="required")
+                    label(for="text") 
                         span Краткое описание проекта:
-                        textarea(name="text", cols="1", rows="1" ) 
+                        textarea#text(name="text", cols="1", rows="1" ) 
                     .budget-list
                         h3 Ваш бюджет:
                         .radio-wrap
