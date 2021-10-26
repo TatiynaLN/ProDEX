@@ -40,7 +40,7 @@ block content
                                 input._req#email(type="email" name="user-email" placeholder="" required="required")
                             label(for="text") 
                                 span Краткое описание проекта:
-                                textarea#text(name="text", cols="1", rows="1" ) 
+                                textarea#text(name="quiz-message" , cols="1", rows="1" ) 
                             .budget-list
                                 h3 Ваш бюджет:
                                 .radio-wrap
@@ -64,7 +64,7 @@ block content
                                         span 150 000 
                                         |руб.
                             .quiz__source-list
-                                h3 Ваш бюджет:
+                                h3 Откуда узнали о нас?
                                 .radio-wrap
                                     input._req#source-1(type="radio" name="source" value="Из поисковых систем")
                                     label(for="source-1") Из поисковых систем
@@ -85,7 +85,7 @@ block content
                                     input._req.chec#chec(type="checkbox" required="required" checked)
                                     label.form-chec(for="chec") Вы соглашаетесь 
                                             a(href="#!" target="_blank") с условиями обработки персональных данных
-                                button.btn-border
+                                button.btn-border.btn-thanks
                                     span ⟶
                                     |Оставить заявку
         include ./../components/sections/directions/directions.pug

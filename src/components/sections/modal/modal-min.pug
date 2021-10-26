@@ -1,0 +1,48 @@
+//- мой корявый js находится в папке js -> modules ->  MODAL.JS (В НЕМ МОЖНО УДАЛИТЬ ВЕСЬ МОЙ КОД)
+
+
+//- первая модалка открывается по клику на кнопки с классом .btn-1
+.modal-wrapper 
+    .modal.modal-min
+        span.close +
+        h3 Заполните форму ниже, и мы скоро перезвоним Вам
+        form
+            input._req(type="text" name='user-name' placeholder="Ваше имя:" required="required")
+            input._req.phone-input(type="text" name="user-phone" placeholder="Ваш телефон:" required="required")
+            button.btn-border.btn-thanks
+                span ⟶
+                |Заказать звонок
+            .form__policy
+                input._req.chec#modal-chec1(type="checkbox" required="required" checked)
+                label.form-chec(for="modal-chec1") Вы соглашаетесь 
+                        a(href="#!" target="_blank") с условиями обработки персональных данных
+//- вторая модалка открывается по клику на кнопки с классом .btn-2
+.modal-wrapper
+    .modal.modal-max
+        span.close +
+        h3 Заполните форму, и мы свяжемся с Вами для обсуждения проекта.
+        form
+            input._req(type="text" name='user-name' placeholder="Ваше имя:" required="required")
+            input._req.phone-input(type="text" name="user-phone" placeholder="Ваш телефон:" required="required")
+            input._req(type="email" name="user-email" placeholder="Ваш E-mail:" required="required")
+            textarea._req(name="quiz-message"  placeholder="Краткое описание проекта:" required="required")
+            button.btn-border.btn-thanks
+                span ⟶
+                |Заказать звонок
+            .form__policy
+                input._req.chec#modal-chec2(type="checkbox" required="required" checked)
+                label.form-chec(for="modal-chec2") Вы соглашаетесь 
+                        a(href="#!" target="_blank") с условиями обработки персональных данных
+//- модалка благодарности открывается по клику на кнопки с классом .btn-thanks
+.modal-wrapper
+    .modal.modal-thanks
+        span.close +
+        h3 Ваша заявка принята. Ожидайте звонка!
+        .modal-block
+            .modal-block__txt
+                p А пока Вы можете посмотреть примеры наших работ.
+                a(href="/").btn-border
+                    span ⟶
+                    |Смотреть
+            .modal-block__img 
+                img(src="./wp-content/themes/prodex/assets/img/icons/form-img.svg", alt="")
