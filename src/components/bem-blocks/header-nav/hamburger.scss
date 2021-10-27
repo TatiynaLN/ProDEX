@@ -113,13 +113,16 @@ input#menu__toggle[type="checkbox"] + label {
             margin-right: 2rem;
         }
         @media (min-width: 1140px) {
-            width: 8.8rem;
-            min-width: 8.8rem;
+            width: 6.8rem;
+            min-width: 6.8rem;
             display: flex;
             margin-bottom: 0rem;
+            margin-right: 3rem;
         }
         @media (min-width: 1440px) {
             margin: 0 10rem;
+            width: 8.8rem;
+            min-width: 8.8rem;
         }
     }
 }

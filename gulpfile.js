@@ -278,11 +278,23 @@ gulp.task('svg', () => {
     return gulp.src(paths.svg.src)
         .pipe(plumber())
         .pipe(newer(paths.svg.dest))
-        .pipe(svgmin({
-            js2svg: {
-                pretty: true
-            }
-        }))
+        .pipe(imagemin([
+            imagemin.svgo({
+                plugins: [
+                    {
+                        removeViewBox: true
+                    },
+                    {
+                        cleanupIDs: false
+                    }
+                ]
+            })
+        ]))
+        // .pipe(svgmin({
+        //     js2svg: {
+        //         pretty: true
+        //     }
+        // }))
         .pipe(gulp.dest(paths.svg.dest))
         .pipe(browserSync.stream())
 });

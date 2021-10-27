@@ -17,6 +17,9 @@
         background-size: cover;
         background-position: center center;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @media (min-width: 1140px) {
             max-width: 31%;
         }
@@ -47,6 +50,10 @@
         }
         &:nth-child(3n) {
             background-image: url("../img/icons/ceni3.svg");
+        }
+        h4 {
+            margin-top: auto;
+            align-self: flex-end;
         }
     }
     h3,
