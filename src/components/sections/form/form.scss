@@ -442,6 +442,7 @@
     color: #f28d55;
     @media (min-width: 411px) {
         display: flex;
+        align-items: center;
     }
     a {
         font-family: "NEXTART-Bold";
@@ -472,5 +473,14 @@
     .forms-block__left {
         flex-direction: column;
         align-items: flex-start;
+        .social {
+            @media (min-width: 411px) {
+                max-width: 7rem;
+                margin-left: 4rem;
+            }
+            svg {
+                display: block;
+            }
+        }
     }
 }
