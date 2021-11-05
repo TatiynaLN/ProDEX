@@ -2,7 +2,7 @@
     height: 9rem;
     max-width: 32.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-style: normal;
     font-weight: 600;
@@ -68,6 +68,7 @@
     position: relative;
     z-index: 0;
     transition: all 0.7s;
+    border: 1px solid transparent;
     &::after,
     &::before {
         content: "";

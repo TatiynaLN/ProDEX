@@ -32,3 +32,9 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "NEXTART";
+  src: url("../fonts/NEXTART.woff") format("woff"), url("../fonts/NEXTART.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
