@@ -13,6 +13,7 @@
     backdrop-filter: blur(2px);
     padding: 2.1rem 0;
     position: fixed;
+    z-index: 1;
     &:hover,
     &:focus {
         @media (min-width: 1140px) {
