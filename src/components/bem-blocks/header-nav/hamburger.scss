@@ -81,7 +81,7 @@ input#menu__toggle[type="checkbox"] + label {
         width: auto;
         justify-content: space-between;
         opacity: 1;
-        backdrop-filter: blur(0px);
+        backdrop-filter: none;
         background: transparent;
         position: inherit;
         visibility: visible;
@@ -99,9 +99,9 @@ input#menu__toggle[type="checkbox"] + label {
         margin: 0 auto;
         @media (min-width: 1140px) {
             display: block;
-            width: 20.8rem;
-            min-width: 20.8rem;
-            max-width: 20.8rem;
+            width: 21.8rem;
+            min-width: 21.8rem;
+            max-width: 21.8rem;
         }
     }
 
