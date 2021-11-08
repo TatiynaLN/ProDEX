@@ -1,7 +1,6 @@
 // вызов модалки
 export default function modal() {
 
-    // с 5 строки по 17 включительно можно смело все удалять
     let panel = document.querySelector('body');
     let modal = document.querySelector('.modal-wrapper'); // .modal-wrapper обертка для всех модалок с задним фоном во весь экран
     
@@ -54,14 +53,5 @@ export default function modal() {
 
     }
 
-
-
-    
-    /* сейчас этот код работает только на одной кнопке и открывает только одну модалку
-    эта кнопка появляется в шапке на экранах в от 600рх до 1100рх
-
-    btn-2
-    btn-thanks
-    */
 
 }
