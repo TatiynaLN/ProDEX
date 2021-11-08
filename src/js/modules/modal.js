@@ -44,12 +44,19 @@ export default function modal() {
         });
     }
 
-    if(document.querySelector('.close')) {
-        document.querySelector('.close').addEventListener('click', e => { // крестик находится в spane с классом .close по нему запланировано закрытие модалки
+    let closes = document.querySelectorAll('.close'); 
+    for (let close of closes) {
+
+        close.addEventListener('click', e => { // крестик находится в spane с классом .close по нему запланировано закрытие модалки
             panel.classList.toggle('no-scroll');
             modal.classList.toggle('modal-wrapper--open');
         });
+
     }
+
+
+
+    
     /* сейчас этот код работает только на одной кнопке и открывает только одну модалку
     эта кнопка появляется в шапке на экранах в от 600рх до 1100рх
 
