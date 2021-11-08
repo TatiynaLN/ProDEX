@@ -5,8 +5,10 @@ export default function modal() {
     let panel = document.querySelector('body');
     let modal = document.querySelector('.modal-wrapper'); // .modal-wrapper обертка для всех модалок с задним фоном во весь экран
     document.querySelector('.btn-1').addEventListener('click', e => { // .btn-1 класс кнопки по которой открывается первая форма 
+        
         panel.classList.toggle('no-scroll');
         modal.classList.toggle('modal-wrapper--open'); // добавляем этот класс .modal-wrapper--open для оберток всех модалок тогда окно откроется
+    
     });
     document.querySelector('.close').addEventListener('click', e => { // крестик находится в spane с классом .close по нему запланировано закрытие модалки
         panel.classList.toggle('no-scroll');
