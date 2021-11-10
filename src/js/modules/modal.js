@@ -54,4 +54,15 @@ export default function modal() {
     }
 
 
+    
+    window.addEventListener('keydown', (e) => {
+        if (e.code === 'Escape') {
+            let panel = document.querySelector('body');
+            let modal = document.querySelector('.modal-wrapper'); 
+            
+        panel.classList.remove('no-scroll');
+        modal.classList.remove('modal-wrapper--open');
+        }
+    }); 
+
 }
