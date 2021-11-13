@@ -30,7 +30,7 @@
     border-radius: 100%;
     transition: all 0.6s;
     display: none;
-    &.active-modal{
+    &.active-modal {
         display: block;
     }
 
@@ -40,9 +40,9 @@
     .close {
         color: #fff;
         position: absolute;
-        top: 1.5rem;
+        top: 0rem;
         right: 1.5rem;
-        font-size: 3rem;
+        font-size: 5rem;
         transform: rotate(135deg);
         cursor: pointer;
     }
@@ -57,12 +57,19 @@
         @media (min-width: 1140px) {
             color: #ffe3d3;
         }
+        @media (max-height: 560px) {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
     }
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 3rem;
+        @media (max-height: 560px) {
+            gap: 0.5rem;
+        }
         button {
             align-self: flex-start;
             font-size: 1.4rem;
@@ -87,6 +94,10 @@
             font-size: 1.6rem;
             padding: 1.5rem 2rem;
         }
+        @media (max-height: 560px) {
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem !important;
+        }
     }
     textarea {
         width: 100%;
@@ -106,6 +117,10 @@
             font-size: 1.6rem;
             padding: 1.5rem 2rem;
         }
+        @media (max-height: 560px) {
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem !important;
+        }
     }
     textarea::-webkit-input-placeholder,
     input::-webkit-input-placeholder {
@@ -115,6 +130,9 @@
         font-weight: 600;
         font-size: 1.6rem;
         line-height: 160.2%;
+        @media (max-height: 560px) {
+            font-size: 1.2rem !important;
+        }
     }
     textarea::-moz-placeholder,
     input::-moz-placeholder {
@@ -124,6 +142,9 @@
         font-weight: 600;
         font-size: 1.6rem;
         line-height: 160.2%;
+        @media (max-height: 560px) {
+            font-size: 1.2rem !important;
+        }
     } /* Firefox 19+ */
     textarea:-moz-placeholder,
     input:-moz-placeholder {
@@ -133,6 +154,9 @@
         font-weight: 600;
         font-size: 1.6rem;
         line-height: 160.2%;
+        @media (max-height: 560px) {
+            font-size: 1.2rem !important;
+        }
     } /* Firefox 18- */
     textarea:-ms-input-placeholder input:-ms-input-placeholder {
         color: #ffe3d3;
@@ -141,6 +165,17 @@
         font-weight: 600;
         font-size: 1.6rem;
         line-height: 160.2%;
+        @media (max-height: 560px) {
+            font-size: 1.2rem !important;
+        }
+    }
+    .form__policy {
+        label,
+        a {
+            @media (max-height: 560px) {
+                font-size: 1.2rem;
+            }
+        }
     }
 }
 .modal-min {
@@ -148,6 +183,19 @@
 }
 .modal-max {
     background: url("../img/icons/fon-modal2.svg"), linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    h3 {
+        @media (max-height: 885px) {
+            font-size: 1.6rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+    input,
+    textarea {
+        @media (max-height: 885px) {
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem !important;
+        }
+    }
 }
 .modal-thanks {
     background: url("../img/icons/fon-modal3.svg"), linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));

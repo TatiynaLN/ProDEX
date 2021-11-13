@@ -27,7 +27,7 @@
         font-size: 1.8rem;
         line-height: 160.2%;
         color: #ffffff;
-        padding-left: 5.4rem;
+        padding-left: 6.4rem;
         text-align: left;
         position: relative;
         @media (min-width: 620px) {
@@ -37,8 +37,8 @@
         &::after {
             position: absolute;
             content: "";
-            height: 2rem;
-            width: 2rem;
+            height: 4rem;
+            width: 4rem;
             left: 0;
             top: 50%;
             transform: translateY(-50%);
@@ -47,8 +47,8 @@
             background-position: center;
             transition: all 0.4s;
             @media (min-width: 620px) {
-                height: 3.4rem;
-                width: 3.4rem;
+                height: 5.4rem;
+                width: 5.4rem;
             }
         }
         &::before {
@@ -84,7 +84,6 @@
 }
 .portfolio-wrap {
     width: 100%;
-    padding-top: 10rem;
     position: relative;
     display: flex;
     flex-wrap: wrap;

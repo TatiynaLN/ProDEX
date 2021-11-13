@@ -30,10 +30,10 @@ input#menu__toggle[type="checkbox"] + label {
     height: 2.6rem;
     cursor: pointer;
     z-index: 91;
-    transform: translatey(-1.4rem);
-    @media (min-width: 540px) {
-        transform: translatey(-1.1rem);
-    }
+    // transform: translatey(-1.4rem);
+    // @media (min-width: 540px) {
+    //     transform: translatey(-1.1rem);
+    // }
     @media (min-width: 1140px) {
         display: none;
     }
@@ -106,11 +106,11 @@ input#menu__toggle[type="checkbox"] + label {
     }
 
     .social {
-        margin-bottom: 4.5rem;
-        margin-right: 2rem;
+        margin-bottom: 2.5rem;
+        margin-right: 3.7rem;
         margin-left: auto;
         @media (min-width: 540px) {
-            margin-right: 2rem;
+            margin-right: 3.7rem;
         }
         @media (min-width: 1140px) {
             width: 6.8rem;
@@ -138,13 +138,25 @@ input#menu__toggle[type="checkbox"] + label {
     top: 0;
     transform: rotate(90deg);
 }
-#menu__toggle:checked ~ .menu__box {
+#menu__toggle:checked ~ .menu__mobil-wrap {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(100, 17, 166, 0.7) 0.01%, rgba(63, 4, 109, 0.7) 100%);
+    backdrop-filter: blur(20px);
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+}
+#menu__toggle:checked ~ .menu__mobil-wrap .menu__box {
     visibility: visible;
     opacity: 1;
     transition: all 0.4s;
     top: 0;
 }
 .hamburger-menu {
+    display: flex;
     @media (min-width: 1140px) {
         width: 90%;
         display: flex;

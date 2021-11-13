@@ -2,7 +2,7 @@
     /* .header__nav */
     &__nav {
         width: 100%;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         @media (min-width: 640px) {
             margin-left: auto;
         }
@@ -46,7 +46,6 @@
                 position: relative;
                 height: 100%;
                 @media (min-width: 1140px) {
-                    margin-right: 2rem;
                     &:hover,
                     &:focus {
                         .header__drop-menu {
@@ -66,22 +65,25 @@
                 }
                 /* стили для подменю */
                 .header__drop-menu {
-                    position: absolute;
-                    left: 0;
-                    z-index: 8;
-                    transform: scaleY(0);
-                    transform-origin: 0 0;
-                    transition: 0.5s ease-in-out;
-                    background: rgba(32, 0, 57, 0.9);
-                    border-radius: 0rem 5rem 0rem 2rem;
                     min-width: 28rem;
-                    padding: 2rem 0;
-                    opacity: 0;
-                    visibility: hidden;
-                    border-bottom-left-radius: 4px;
-                    border-bottom-right-radius: 4px;
+                    padding-bottom: 0.5rem;
                     background: transparent;
                     overflow: hidden;
+                    @media (min-width: 1140px) {
+                        position: absolute;
+                        left: 0;
+                        z-index: 8;
+                        transform: scaleY(0);
+                        transform-origin: 0 0;
+                        transition: 0.5s ease-in-out;
+                        background: rgba(32, 0, 57, 0.9);
+                        border-radius: 0rem 5rem 0rem 2rem;
+                        opacity: 0;
+                        visibility: hidden;
+                        border-bottom-left-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                        padding: 2rem 0;
+                    }
 
                     @media (min-width: 1320px) {
                         max-width: 30rem;
@@ -91,8 +93,17 @@
                     }
                     a {
                         display: block;
-                        padding: 1.5rem 2rem;
-                        text-align: left;
+                        padding: 1rem 4.3rem 1rem 2rem;
+                        text-align: right;
+                        font-size: 1.2rem;
+                        @media (max-height: 600px) {
+                            padding: 0.5rem 4.3rem 0.5rem 2rem;
+                        }
+                        @media (min-width: 1140px) {
+                            padding: 1.5rem 2rem;
+                            text-align: left;
+                            font-size: 1.6rem;
+                        }
                     }
                 }
             }
@@ -100,7 +111,10 @@
                 text-align: right;
                 line-height: 2.3rem;
                 display: block;
-                padding: 2.5rem 2rem;
+                padding: 1.5rem 3.7rem 1.5rem 2rem;
+                @media (max-height: 660px) {
+                    padding: 1rem 3.7rem 0.5rem 2rem;
+                }
                 @media (min-width: 1200px) {
                     padding: 2rem 1.6rem;
                 }

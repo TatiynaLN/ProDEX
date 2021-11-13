@@ -97,9 +97,10 @@
     left: 0;
     background: rgba(32, 0, 57, 0.9);
     will-change: auto;
-    padding: 0;
+    padding: 0.5rem 0;
     transition: all 0.5s ease-out;
     @media (min-width: 1140px) {
+        padding: 0;
         width: calc(100% - 17px) !important;
     }
     // }
