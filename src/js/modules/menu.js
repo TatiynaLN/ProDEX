@@ -4,6 +4,11 @@ export default function menu() {
     document.querySelector('.menu__btn').addEventListener('click', e => {
         panel.classList.toggle('no-scroll');
     });
+    document.querySelector('.custom-close').addEventListener('click', e => {
+        panel.classList.toggle('no-scroll');
+    });
+    
+
 }
 
 
