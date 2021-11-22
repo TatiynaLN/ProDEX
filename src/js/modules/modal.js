@@ -47,8 +47,8 @@ export default function modal() {
     for (let close of closes) {
 
         close.addEventListener('click', e => { // крестик находится в spane с классом .close по нему запланировано закрытие модалки
-            panel.classList.toggle('no-scroll');
-            modal.classList.toggle('modal-wrapper--open');
+            panel.classList.remove('no-scroll');
+            modal.classList.remove('modal-wrapper--open');
         });
 
     }
