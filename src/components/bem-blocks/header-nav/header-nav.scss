@@ -126,9 +126,11 @@
 }
 .item-link-active .nav__link--active {
     // вот он
-    text-shadow: rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(1, 18, 15, 0.1) 0.5px 0.5px,
-        rgba(17, 192, 171, 0.7) 0.5px 0px, rgba(17, 192, 171, 0.7) 0.5px 0.5px, rgba(17, 192, 171, 0.7) 0.5px 0px,
-        rgba(1, 18, 15, 0.7) 0.5px 0.5px;
+    color: #ffe3d3;
+}
+.header__nav ul a.open,
+.header__nav ul a.nav__link--active {
+    color: #ffe3d3;
 }
 .header__nav .header__nav-list li .header__drop-menu.submenu-active {
     visibility: visible;

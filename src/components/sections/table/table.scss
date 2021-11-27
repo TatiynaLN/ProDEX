@@ -28,6 +28,10 @@
         }
         td {
             color: #ffffff;
+            white-space: nowrap;
+            @media (min-width: 1140px) {
+                white-space: pre-wrap;
+            }
         }
     }
     /* Стили для скролла */
@@ -52,12 +56,12 @@
 tfoot {
     td {
         &:last-child {
-            padding-right: 5rem;
+            padding-right: 4rem;
             min-width: 28rem;
             max-width: 28rem;
         }
         &:first-child {
-            padding-left: 5rem;
+            padding-left: 4rem;
         }
     }
     span {

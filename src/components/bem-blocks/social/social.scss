@@ -16,6 +16,12 @@
                 fill: #f28d55;
                 transition: all 0.6s;
             }
+            .static {
+                display: none;
+            }
+            .hover {
+                display: block;
+            }
         }
     }
     svg {
@@ -23,5 +29,13 @@
         height: 100%;
         fill: #ffffff;
         transition: all 0.6s;
+    }
+    img {
+        transition: all 0.6s;
+    }
+    .static {
+    }
+    .hover {
+        display: none;
     }
 }

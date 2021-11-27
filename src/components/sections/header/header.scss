@@ -38,10 +38,10 @@
     }
     .social {
         padding: 0;
-        margin-right: 5rem;
-        @media (min-width: 540px) {
-            margin-right: 0rem;
-        }
+        // margin-right: 5rem;
+        // @media (min-width: 540px) {
+        //     margin-right: 0rem;
+        // }
     }
     .btn {
         width: 20.8rem;
@@ -62,7 +62,7 @@
             width: 18.8rem;
             height: 4.3rem;
             display: block;
-            margin-right: 6rem;
+            // margin-right: 6rem;
         }
         @media (min-width: 1140px) {
             width: 20.8rem;

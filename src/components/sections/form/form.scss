@@ -7,6 +7,28 @@
     }
     label {
         color: #ffffff;
+
+        input {
+            color: #ffe3d3;
+        }
+        textarea {
+            color: #ffe3d3;
+        }
+        textarea::-webkit-input-placeholder,
+        input::-webkit-input-placeholder {
+            color: #ffe3d3;
+        }
+        textarea::-moz-placeholder,
+        input::-moz-placeholder {
+            color: #ffe3d3;
+        } /* Firefox 19+ */
+        textarea:-moz-placeholder,
+        input:-moz-placeholder {
+            color: #ffe3d3;
+        } /* Firefox 18- */
+        textarea:-ms-input-placeholder input:-ms-input-placeholder {
+            color: #ffe3d3;
+        }
     }
 }
 .forms-block {
@@ -276,9 +298,15 @@
             border: none;
         }
     }
+    input {
+        border-bottom: 2px solid transparent;
+    }
     input[type="radio"] {
         display: none;
     }
+}
+.radio-wrap input[type="radio"] + label {
+    border-bottom: 2px solid transparent;
 }
 .radio-wrap input[type="radio"]:checked + label {
     background: transparent;
@@ -376,10 +404,14 @@
             width: 1.4rem;
             height: 1.4rem;
             top: 50%;
-            left: 0.45rem;
+            // left: 0.51rem;
+            left: 0;
             background-color: transparent;
-            transform: translateY(-50%);
+            transform: translate(0.49rem, -50%);
             transition: 0.5s;
+            // @media (min-width: 1123px) {
+            //     left: 0.45rem;
+            // }
         }
     }
     input:checked + label::after {
