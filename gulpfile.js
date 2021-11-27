@@ -174,7 +174,7 @@ gulp.task('styles', () => {
             includePaths: ['node_modules']
         }))
         .pipe(autoprefixer({
-            // Browserslist: ['> 1%, not dead'],
+            Browserslist: ['last 4 version'],
             cascade: false
         }))
         .pipe(gcmq())
