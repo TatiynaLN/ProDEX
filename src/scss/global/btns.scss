@@ -122,3 +122,11 @@ button {
     border-color: transparent;
     border-image: initial;
 }
+
+.technol {
+    .btn-border {
+        @media (min-width: 411px) {
+            width: 34rem;
+        }
+    }
+}

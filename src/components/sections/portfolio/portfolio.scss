@@ -9,6 +9,9 @@
     .btn-border {
         height: 9rem;
         width: 28rem;
+        @media (min-width: 411px) {
+            width: 34rem;
+        }
     }
 }
 .belt__tags {
