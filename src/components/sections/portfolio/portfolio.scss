@@ -68,10 +68,10 @@
                 transform: scale(1) translateY(-50%);
                 transition: all 0.4s;
             }
-            &::before {
-                transform: scale(0) translateY(-50%);
-                transition: all 0.4s;
-            }
+            // &::before {
+            //     transform: scale(0) translateY(-50%);
+            //     transition: all 0.4s;
+            // }
         }
     }
     .link-active {
