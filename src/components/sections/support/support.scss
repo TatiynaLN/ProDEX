@@ -32,14 +32,14 @@
     &__txt {
         @media (min-width: 900px) {
             max-width: 60%;
-            transform: skew(35deg);
+            // transform: skew(35deg);
         }
         @media (min-width: 1440px) {
             max-width: 70%;
         }
         p {
             @media (min-width: 900px) {
-                transform: skew(-35deg);
+                // transform: skew(-35deg);
                 margin-bottom: 1rem;
             }
         }
