@@ -97,12 +97,16 @@
         }
     }
     .social {
-        padding: 0 1rem;
+        padding: 0rem;
         @media (min-width: 800px) {
             order: 2;
         }
         @media (min-width: 1250px) {
             order: 3;
+        }
+
+        @media (min-width: 900px) {
+            padding: 0 1rem;
         }
     }
     .btn {
