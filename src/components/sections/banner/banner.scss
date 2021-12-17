@@ -90,6 +90,10 @@
         width: 30.9rem;
         position: relative;
         margin-bottom: 5rem;
+        display: none;
+        @media (min-width: 1240px) {
+            display: block;
+        }
         &::before {
             position: absolute;
             content: "";
@@ -103,5 +107,19 @@
         }
     }
     &__txt {
+        .banner-service__img {
+            display: block;
+            text-align: center;
+            margin: 0 auto 5rem;
+            @media (min-width: 1240px) {
+                display: none;
+            }
+            img {
+                height: 25.2rem;
+            }
+            &::before {
+                display: none;
+            }
+        }
     }
 }
